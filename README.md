@@ -1,10 +1,15 @@
 # CutHub
 
-Hairstylist Social Media Application
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 
-A social media application for hairstylists. Users will be able to
+> Hairstylist Social Media Application
 
-Create a profile:
--Add skills and experience.
--Post, Like, Unlike, and Comment on topics.
--View other Hairstylists' profiles.
+## About
+
+A social media application for hair stylists created with React, Express, MongoDB and Redux.
+
+## Author
+
+👤 **Rafi Olaverria**
+
+- LinkedIn: [@RafiOlaverria](https://linkedin.com/in/RafiOlaverria)

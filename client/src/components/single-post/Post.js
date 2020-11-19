@@ -10,7 +10,8 @@ import CommentItems from './CommentItems';
 
 const Post = ({ match, getPost, posts: { loading, post } }) => {
   useEffect(() => {
-    getPost(match.params.id);
+      getPost(match.params.id);
+      // eslint-disable-next-line
   }, [getPost]);
 
   return loading || post === null ? (

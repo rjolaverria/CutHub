@@ -41,35 +41,36 @@ const EditProfile = ({
   const [displaySocial, toggleDisplay] = useState(false);
 
   useEffect(() => {
-    getCurrentProfile();
-    setFormData({
-      company: loading || !profile.company ? '' : profile.company,
-      website: loading || !profile.website ? '' : profile.website,
-      location: loading || !profile.location ? '' : profile.location,
-      status: loading || !profile.status ? '' : profile.status,
-      skills: loading || !profile.skills ? '' : profile.skills,
-      bio: loading || !profile.bio ? '' : profile.bio,
-      youtube:
-        loading || !profile.social || !profile.social.youtube
-          ? ''
-          : profile.social.youtube,
-      twitter:
-        loading || !profile.social || !profile.social.twitter
-          ? ''
-          : profile.social.twitter,
-      facebook:
-        loading || !profile.social || !profile.social.facebook
-          ? ''
-          : profile.social.facebook,
-      linkedin:
-        loading || !profile.social || !profile.social.linkedin
-          ? ''
-          : profile.social.linkedin,
-      instagram:
-        loading || !profile.social || !profile.social.instagram
-          ? ''
-          : profile.social.instagram,
-    });
+      getCurrentProfile();
+      setFormData({
+          company: loading || !profile.company ? '' : profile.company,
+          website: loading || !profile.website ? '' : profile.website,
+          location: loading || !profile.location ? '' : profile.location,
+          status: loading || !profile.status ? '' : profile.status,
+          skills: loading || !profile.skills ? '' : profile.skills,
+          bio: loading || !profile.bio ? '' : profile.bio,
+          youtube:
+              loading || !profile.social || !profile.social.youtube
+                  ? ''
+                  : profile.social.youtube,
+          twitter:
+              loading || !profile.social || !profile.social.twitter
+                  ? ''
+                  : profile.social.twitter,
+          facebook:
+              loading || !profile.social || !profile.social.facebook
+                  ? ''
+                  : profile.social.facebook,
+          linkedin:
+              loading || !profile.social || !profile.social.linkedin
+                  ? ''
+                  : profile.social.linkedin,
+          instagram:
+              loading || !profile.social || !profile.social.instagram
+                  ? ''
+                  : profile.social.instagram,
+      });
+      // eslint-disable-next-line
   }, [loading, getCurrentProfile]);
 
   const onChange = (e) =>

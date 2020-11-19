@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from '../utils/axios';
 import { setAlert } from '../actions/alert';
 import {
   GET_PROFILE,
